@@ -1,0 +1,16 @@
+:root{
+
+}
+/* Noticas */
+
+.noticas{
+
+}
+
+.noticas--title{
+    font-style: oblique;
+    font-size: 1.1rem;
+}
+.noticas--description{
+    font-size: .85rem;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "coopama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^1.4.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
