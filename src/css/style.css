@@ -14,3 +14,28 @@
 .noticas--description{
     font-size: .85rem;
 }
+.coticao{
+    position: relative;
+    min-height: 300px;
+}
+.coticao::after{
+    content: 'Cotaçao';
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 12rem;
+    font-weight: bold;
+    font-style: oblique;
+    position: absolute;
+    line-height: 1;
+    width: 100%;
+    /* height: 200px; */
+    opacity: .2;
+}
+
+.coticao--title{
+    font-size: 3rem;
+}
+.coticao--desc{
+    line-height: 1
+}
