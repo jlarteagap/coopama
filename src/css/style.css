@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root{
+    --green: #709148;
     --blue: #008dd0;
     --bgMain: #dedede;
     --bgFooter: #d8d0c5;
@@ -18,44 +19,59 @@ body{
 
 }
 .noticas--heading{
+    font-size: 2.1rem;
+    letter-spacing: -0.05rem;
+    font-weight: 500;
     color: var(--blue);
+    line-height: 1;
+}
+.noticas--heading--desc{
+    font-size: 1.25rem;
+    letter-spacing: -0.05rem;
 }
 .noticas--title{
-    color: var(--blue);
     font-style: oblique;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+}
+.noticas--title a{
+    color: var(--green);
+    letter-spacing: -0.05rem;
 }
 .noticas--description{
-    font-size: .85rem;
+    font-size: .9rem;
 }
 .coticao{
-    position: relative;
     min-height: 300px;
 }
-.coticao::after{
-    content: 'Cotaçao';
-    display: flex;
-    align-items: center;
-    font-size: 12rem;
-    font-weight: bold;
-    font-style: oblique;
-    position: absolute;
-    line-height: 1;
-    width: 100%;
-    /* height: 200px; */
-    opacity: .2;
+.coticao__text{
+    background: url(../img/bg/bg-conosca.png) no-repeat left top / contain;
 }
 
 .coticao--title{
     font-size: 3rem;
 }
 .coticao--desc{
-    line-height: 1
+    font-size: 1.98rem;
+    letter-spacing: -0.1rem;
+    background: #8DC63F;
+    background: linear-gradient(to right, var(--blue) 0%, var(--green) 100%);
+    background-clip: text;
+    background-blend-mode: multiply;
+    -webkit-text-fill-color: transparent;
 }
-
+.btn--green{
+    background: linear-gradient(var(--green), #6d9930);
+    border-radius: 30px;
+    color: white;
+    font-size: .95rem;
+    font-weight: 500;
+    padding: .6rem 1.5rem;
+    text-transform: uppercase;
+}
 /* Footer  */
 .footer {
     background: linear-gradient(var(--bgFooter), var(--bgLight));
+    font-weight: 600;
 }
 .footer::before{
     background-color: var(--bgMain);
