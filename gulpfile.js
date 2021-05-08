@@ -26,7 +26,7 @@ watch = () =>{
             baseDir: './'
         }
     });
-    gulp.watch('./src/css/style.css', style);
+    gulp.watch('/src/css/style.css', style);
     gulp.watch('./*html').on('change', browserSync.reload);
 };
 

@@ -1,13 +1,27 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800;900&display=swap');
 
+:root{
+    --blue: #008dd0;
+    --bgMain: #dedede;
+    --bgFooter: #d8d0c5;
+    --bgLight: #e7e1da;
+    --Text: #616060;
+}
+body{
+    background: var(--bgMain);
+    color: var(--Text);
+    font-family: 'Rubik', sans-serif;
 }
 /* Noticas */
 
 .noticas{
 
 }
-
+.noticas--heading{
+    color: var(--blue);
+}
 .noticas--title{
+    color: var(--blue);
     font-style: oblique;
     font-size: 1.1rem;
 }
@@ -21,7 +35,6 @@
 .coticao::after{
     content: 'Cotaçao';
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     font-size: 12rem;
     font-weight: bold;
@@ -38,4 +51,48 @@
 }
 .coticao--desc{
     line-height: 1
+}
+
+/* Footer  */
+.footer {
+    background: linear-gradient(var(--bgFooter), var(--bgLight));
+}
+.footer::before{
+    background-color: var(--bgMain);
+    background-image: url(../img/bg/corns.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    /* background-position: 60% bottom; */
+    content: '';
+    display: block;
+    height: 67px;
+    width: 100%;
+}
+.footer--machine{
+    height: 0;
+}
+.footer--machine::before{
+    /* background-color: var(--bgMain); */
+    background-image: url(../img/bg/machine.png);
+    content: '';
+    display: block;
+    height: 67px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    top: -67px;
+}
+.footer__logo{
+    width: 180px;
+}
+.footer--menu{
+    padding: 0;
+}
+.footer--menu li{
+    list-style-image: url(../img/icons/bullet.gif);
+    /* list-style-type: none; */
+}
+.footer__credit{
+    font-size: .66rem;
 }
