@@ -12,6 +12,7 @@
     --bgFooter: #d8d0c5;
     --bgLight: #e7e1da;
     --Text: #616060;
+    --bgSearch: #d7d3c6;
 }
 body{
     background: var(--bgMain);
@@ -71,6 +72,48 @@ body{
 }
 .top__header--item img{
     max-width: 24px;
+}
+/* HEADER  */
+.header__nav{
+    padding: .5rem 0;
+}
+.coopama__logo{
+    max-width: 220px;
+    height: auto;
+}
+.nav--menu{
+    font-size: .8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.nav--menu--link{
+    padding: 0;
+}
+.nav--menu--link::before{
+    content: '';
+    background: url(../img/icons/navItem.png) no-repeat;
+    width: 3px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative;
+    top: 2px;
+}
+
+/* SEARCH  */
+.search{
+    background: var(--bgSearch);
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.search input, .search input:focus{
+    font-size: .8rem;
+    border: transparent;
+    background: transparent;
+}
+.btn--search{
+    padding: .375rem .75rem;
 }
 /* CAFE. SECTION */
 .cafe{
