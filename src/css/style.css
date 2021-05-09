@@ -2,7 +2,11 @@
 
 :root{
     --green: #709148;
+    --darkGreen: #556541;
+    --bgGreenDark: #435231;
     --blue: #008dd0;
+    --blueLight: #0079fe;
+    --darkBlue: #031944;
     --bgMain: #dedede;
     --bgFooter: #d8d0c5;
     --bgLight: #e7e1da;
@@ -13,16 +17,126 @@ body{
     color: var(--Text);
     font-family: 'Rubik', sans-serif;
 }
+/* UTILS */
+.btn--coopama{
+    font-size: .95rem;
+    font-weight: 500;
+    padding: .6rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 30px;
+
+}
+.btn--green{
+    background: linear-gradient(var(--green), #6d9930);
+    color: white;
+}
+.btn--blue{
+    background: linear-gradient(var(--blue), #006da0);
+    color: white;
+}
+
+/* CAFE. SECTION */
+.cafe{
+}
+.cafe--title{
+    background: var(--darkGreen);
+    border-bottom: 5px solid var(--bgGreenDark);
+    border-radius: 5px;
+    color: white;
+    line-height: 1;
+}
+.cafe--title h2{
+    background: url(../img/bg/logoBarra.png) no-repeat left center;
+    font-size: 1.5rem;
+}
+
+.cafe__card{
+    border-radius: 5px;
+    color: white;
+    background: var(--bgGreenDark);
+}
+.cafe__card--milho{
+    border-radius: 5px 5px 0 0;
+    color: white;
+    background: var(--blueLight);
+}
+.cafe__card--milho--desc{
+    background: var(--darkBlue);
+    font-size: .7rem;
+    font-weight: 500;
+    padding: .25rem 0;
+}
+.card__milho--price{
+    background: linear-gradient(var(--darkBlue), #053c86);
+    color: #93de8d;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+    margin: .5rem 1rem .25rem;
+}
+.card__milho--price h2{
+    font-size: 3.5rem;
+    width: 100%;
+}
+.card__milho--price span{
+    padding: .5rem;
+    border-radius: 5px 0 0 5px;
+    font-size: .9rem;
+    background: #93de8d;
+    color: white;
+}
+.card__body--milho{
+    background: var(--blueLight);
+    border-radius: 0 0 5px 5px;
+    color: white;
+}
+.card__milho--car{
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1;
+}
+.cafe__card--header{
+    background: var(--blue);
+    border-radius: 5px;
+}
+.cafe__card--header--content{
+    padding: 3rem;
+}
+.cafe__card--title{
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: .65;
+    margin: 0;
+}
+.cafe__card--desc{
+    color: var(--darkBlue)
+}
+.cafe--data--content, .cafe--data--content--item{
+    font-size: .7rem;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.cafe--data--content--item{
+    font-weight: 400;
+    background: #d3d3d3
+}
+.cafe--data--title, .cafe--data--item{
+    padding: .25rem 0;
+    border: 0;
+    background: transparent;
+    width: 20%;
+}
 /* Noticas */
 
 .noticas{
-
 }
 .noticas--heading{
-    font-size: 2.1rem;
-    letter-spacing: -0.05rem;
-    font-weight: 500;
     color: var(--blue);
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
     line-height: 1;
 }
 .noticas--heading--desc{
@@ -30,8 +144,8 @@ body{
     letter-spacing: -0.05rem;
 }
 .noticas--title{
-    font-style: oblique;
     font-size: 1.05rem;
+    font-style: oblique;
 }
 .noticas--title a{
     color: var(--green);
@@ -40,34 +154,24 @@ body{
 .noticas--description{
     font-size: .9rem;
 }
+/* This is a Call to Action section */
 .coticao{
     min-height: 300px;
 }
 .coticao__text{
     background: url(../img/bg/bg-conosca.png) no-repeat left top / contain;
 }
-
 .coticao--title{
     font-size: 3rem;
 }
 .coticao--desc{
-    font-size: 1.98rem;
-    letter-spacing: -0.1rem;
-    background: #8DC63F;
     background: linear-gradient(to right, var(--blue) 0%, var(--green) 100%);
-    background-clip: text;
-    background-blend-mode: multiply;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+      color: transparent;
+      font-size: 1.98rem;
+      letter-spacing: -0.1rem;
 }
-.btn--green{
-    background: linear-gradient(var(--green), #6d9930);
-    border-radius: 30px;
-    color: white;
-    font-size: .95rem;
-    font-weight: 500;
-    padding: .6rem 1.5rem;
-    text-transform: uppercase;
-}
+
 /* Footer  */
 .footer {
     background: linear-gradient(var(--bgFooter), var(--bgLight));
@@ -78,7 +182,6 @@ body{
     background-image: url(../img/bg/corns.png);
     background-repeat: repeat-x;
     background-size: contain;
-    /* background-position: 60% bottom; */
     content: '';
     display: block;
     height: 67px;
@@ -88,16 +191,15 @@ body{
     height: 0;
 }
 .footer--machine::before{
-    /* background-color: var(--bgMain); */
     background-image: url(../img/bg/machine.png);
+    background-position: right;
+    background-repeat: no-repeat;
     content: '';
     display: block;
     height: 67px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: right;
     position: relative;
     top: -67px;
+    width: 100%;
 }
 .footer__logo{
     width: 180px;
@@ -107,7 +209,6 @@ body{
 }
 .footer--menu li{
     list-style-image: url(../img/icons/bullet.gif);
-    /* list-style-type: none; */
 }
 .footer__credit{
     font-size: .66rem;
