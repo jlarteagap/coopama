@@ -115,6 +115,31 @@ body{
 .btn--search{
     padding: .375rem .75rem;
 }
+
+/* SLIDE */
+.slide--item{
+    border-radius: 30px;
+}
+.slide--item img{
+    border-radius: 30px;
+    border: solid 10px white
+}
+.slide--control{
+    justify-content: start;
+}
+.slide--control--rigth{
+    justify-content: end;
+}
+.slide--left{
+    padding: 1rem;
+    background: white;
+    border-radius: 0 50% 50% 0;
+}
+.slide--right{
+    padding: 1rem;
+    background: white;
+    border-radius: 50% 0 0 50%;
+}
 /* CAFE. SECTION */
 .cafe{
 }
