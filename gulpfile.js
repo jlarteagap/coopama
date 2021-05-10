@@ -1,14 +1,13 @@
 const gulp = require('gulp')
 const browserSync = require('browser-sync')
 
-style = () => {
-    return gulp.src([
-        './node_modules/bootstrap/dist/css/bootstrap.css', 
-        './src/style.css'
-        ], { allowEmpty: true })
-    .pipe(gulp.dest('./src/css'))
-    .pipe(browserSync.stream());
-};
+// style = () => {
+//     return gulp.src([
+
+//         ], { allowEmpty: true })
+//     .pipe(gulp.dest('./src/css'))
+//     .pipe(browserSync.stream());
+// };
 
 js = () => {
     return gulp.src([
@@ -26,11 +25,11 @@ watch = () =>{
             baseDir: './'
         }
     });
-    gulp.watch('/src/css/style.css', style);
-    gulp.watch('./*html').on('change', browserSync.reload);
+    gulp.watch('/src/css/style.css').on('change', browserSync.reload);
+    gulp.watch('/*.html').on('change', browserSync.reload);
 };
 
 gulp.task('build', 
-     gulp.parallel(style, js))
+     gulp.parallel(js))
  gulp.task('default',
      gulp.series('build', watch))

@@ -9,15 +9,23 @@
     --blueTopHeader: #006ea1;
     --darkBlue: #031944;
     --bgMain: #dedede;
+    --bgArticle: #efeeee;
     --bgFooter: #d8d0c5;
     --bgLight: #e7e1da;
+    --sponsor: #b7aea2;
     --Text: #616060;
     --bgSearch: #d7d3c6;
+    --bgAlert: #e6e6e6;
+    --bgImage: #99d886;
 }
 body{
     background: var(--bgMain);
     color: var(--Text);
     font-family: 'Rubik', sans-serif;
+}
+/* headings  */
+h1, h2, h3, h4, h5, h6{
+    color: var(--blue);
 }
 /* UTILS */
 .btn--coopama{
@@ -35,6 +43,20 @@ body{
 .btn--blue{
     background: linear-gradient(var(--blue), #006da0);
     color: white;
+}
+
+.alert--cafe{
+    padding: .5rem 1rem;
+    color: var(--Text);
+    background: var(--bgAlert);
+    box-sizing: border-box;
+}
+.alert--cafe--top{
+    font-weight: 1.2rem;
+    font-weight: 600;
+}
+.alert--cafe p{
+    margin: 0;
 }
 /* TOP CONTENT  */
 .top__content{
@@ -180,7 +202,42 @@ body{
     text-shadow: 0 2px 3px #0100014f;
     text-transform: uppercase;
 }
+/* BreadCrumbs  */
+.breadcrumbs{
+    background: var(--darkGreen);
+    color: white;
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+    .breadcrumbs a{
+        color: white;
+    }
+    .breadcrumbs--active{
+        font-weight: 600;
+    }
+/* Main in Article  */
+.main--article{
+    background: var(--bgArticle);
+}
+.post--cafe--img{
+    box-shadow: .8rem .8rem #fff;
+}
+.article--image--desc{
+    background: var(--bgImage);
+    font-size: .85rem;
+    color: #1f4214;
+    padding: 1rem;
+    position: absolute;
+    bottom: 25%;
+    z-index: 1;
+    right: 0;
+    line-height: 1;
+}
+.article--image-city{
+    font-weight: 600;
+}
 /* CAFE. SECTION */
+
 .cafe{
 }
 .cafe--title{
@@ -316,7 +373,11 @@ body{
       font-size: 1.98rem;
       letter-spacing: -0.1rem;
 }
-
+/* Sponsors */
+.sponsors-title{
+    font-size: 1rem;
+    color: var(--sponsor);
+}
 /* Footer  */
 .footer {
     background: linear-gradient(var(--bgFooter), var(--bgLight));
@@ -332,11 +393,32 @@ body{
     height: 67px;
     width: 100%;
 }
+.footer--article::before{
+    background: var(--bgArticle);
+    background-image: url(../img/bg/corns.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 67px;
+    width: 100%;
+}
 .footer--machine{
     height: 0;
 }
 .footer--machine::before{
     background-image: url(../img/bg/machine.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 67px;
+    position: relative;
+    top: -67px;
+    width: 100%;
+}
+.footer--machine--article::before{
+    background-image: url(../img/bg/footer-machine-article.png);
     background-position: right;
     background-repeat: no-repeat;
     content: '';
