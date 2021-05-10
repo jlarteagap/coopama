@@ -131,9 +131,10 @@ h1, h2, h3, h4, h5, h6{
     border: 1px solid white;
 }
 .search input, .search input:focus{
-    font-size: .8rem;
-    border: transparent;
     background: transparent;
+    border: transparent;
+    box-shadow: 0 0 0 transparent;
+    font-size: .8rem;
 }
 .btn--search{
     padding: .375rem .75rem;
@@ -448,6 +449,13 @@ h1, h2, h3, h4, h5, h6{
 .footer--menu li{
     list-style-image: url(../img/icons/bullet.gif);
 }
+.footer--phone{
+    color: var(--Text);
+}
 .footer__credit{
     font-size: .66rem;
+}
+.footer--copy, .footer-desing{
+    font-weight: 400;
+    text-transform: uppercase;
 }
