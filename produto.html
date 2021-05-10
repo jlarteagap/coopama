@@ -13,71 +13,81 @@
     <div class="content-fluid top__content">
         <div class="container">
             <!-- top header -->
-            <div class="top__header d-flex align-items-center py-3">
-                <div class="top__header--coop">Cooperativa Agrária de Machado LTDA. (35) 3295.0160</div>
-                <div class="top__header--menu d-flex justify-content-end pr-4">
-                    <div class="text-uppercase top__header--item d-flex align-items-center">
-                        <img src="./src/img/icons/star.png" class="pr-2" />
-                        <a href="#" target="_blank" class="top__header--item--beneficios">benefícios do <br>
-                            <span>cooperado</span></a>
-                    </div>
-                    <div class="mx-4 text-uppercase top__header--item d-flex align-items-center">
-                        <img src="./src/img/icons/badge.png" class="pr-2" />
-                        <a href="#" target="_blank" class="top__header--item--link">Universidade <br>
-                            <span>coopana</span></a>
-                    </div>
-                    <div class="text-uppercase top__header--item d-flex align-items-center">
-                        <img src="./src/img/icons/rotary.png" class="pr-2" />
-                        <a href="#" target="_blank" class="top__header--item--link">área do<br>
-                            <span>colaborador</span></a>
-                    </div>
-                </div>
-                <div class="top__header--button">
-                    <button class="btn btn--coopama btn--blue">
-                        <img src="./src/img/icons/isologo.png" class="mr-2" />
-                        portal do cooperado</button>
-                </div>
-            </div>
+            
+            <nav class="navbar navbar-expand-lg top__header p-0 pt-md-2">
+              <span class="navbar-text col-md-4 px-2 p-md-0 top__header--text">
+                  Cooperativa Agrária de Machado LTDA. (35) 3295.0160
+              </span>
+              <button class="navbar-toggler toggle-top--header" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./src/img/icons/breadcrumbs.png" />
+              </button>
+              <div class="collapse navbar-collapse col-md-8 pt-2 p-md-0" id="top-menu">
+                  <div class="col-md-8 p-0 d-flex justify-content-between justify-content-md-start">
+                      <div class="text-uppercase top__header--item d-flex align-items-center">
+                          <img src="./src/img/icons/star.png" class="pr-2" />
+                          <a href="#" target="_blank" class="top__header--item--beneficios">benefícios do <br>
+                              <span>cooperado</span></a>
+                      </div>  
+                      <div class="mx-1 mx-md-4 text-uppercase top__header--item d-flex align-items-center">
+                          <img src="./src/img/icons/badge.png" class="pr-2" />
+                          <a href="#" target="_blank" class="top__header--item--link">Universidade <br>
+                              <span>coopana</span></a>
+                      </div>
+                      <div class="text-uppercase top__header--item d-flex align-items-center">
+                          <img src="./src/img/icons/rotary.png" class="pr-2" />
+                          <a href="#" target="_blank" class="top__header--item--link">área do<br>
+                              <span>colaborador</span></a>
+                      </div>
+                  </div>
+                  <div class="col-md-4 pr-0 pt-2 pt-md-0 text-right d-flex justify-content-center justify-content-md-end">
+                      <div class="top__header--button">
+                          <button class="btn btn--coopama btn--blue">
+                              <img src="./src/img/icons/isologo.png" class="mr-2" />
+                              portal do cooperado</button>
+                      </div>
+                  </div>
+              </div>
+            </nav>
             <!-- navbar and header  -->
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light header__nav">
-                    <div class="col-md-3 pl-0"><a class="navbar-brand" href="/"><img src="./src/img/logo2017.png" class="coopama__logo" alt="Coopama" /></a></div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="col-md-7 collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="/"><img src="./src/img/icons/home.png" alt="home" /></a>
-                        </li>
-                        <li class="nav-item nav--menu">
-                          <a class="nav-link nav--menu--link" href="/produto.html">Institucional</a>
-                        </li>
-                        <li class="nav-item nav--menu">
-                          <a class="nav-link nav--menu--link" href="/produto.html">Produtos</a>
-                        </li>
-                        <li class="nav-item nav--menu">
-                          <a class="nav-link nav--menu--link" href="/produto.html">Serviços</a>
-                        </li>
-                        <li class="nav-item nav--menu">
-                          <a class="nav-link nav--menu--link" href="/produto.html">Notícias</a>
-                        </li>
-                        <li class="nav-item nav--menu">
-                          <a class="nav-link nav--menu--link" href="/produto.html">Contato</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-2 search">
-                      <div class="input-group align-items-center">
+              <nav class="navbar navbar-expand-lg navbar-light header__nav">
+                  <div class="col-9 col-md-3 pl-0"><a class="navbar-brand" href="/"><img src="./src/img/logo2017.png" class="coopama__logo" alt="Coopama" /></a></div>
+                  <button class="navbar-toggler col-2 nav-menu" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+                  <div class="col-md-9 collapse navbar-collapse pr-0" id="menu">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="/"><img src="./src/img/icons/home.png" alt="home" /></a>
+                      </li>
+                      <li class="nav-item nav--menu">
+                        <a class="nav-link nav--menu--link" href="/produto.html">Institucional</a>
+                      </li>
+                      <li class="nav-item nav--menu">
+                        <a class="nav-link nav--menu--link" href="/produto.html">Produtos</a>
+                      </li>
+                      <li class="nav-item nav--menu">
+                        <a class="nav-link nav--menu--link" href="/produto.html">Serviços</a>
+                      </li>
+                      <li class="nav-item nav--menu">
+                        <a class="nav-link nav--menu--link" href="/produto.html">Notícias</a>
+                      </li>
+                      <li class="nav-item nav--menu">
+                        <a class="nav-link nav--menu--link" href="/produto.html">Contato</a>
+                      </li>
+                    </ul>
+                    <div class="search mt-3 mt-md-0">
+                        <div class="input-group align-items-center">
                           <input type="text" class="form-control" placeholder="Busca..." aria-label="Busca...">
                           <div class="input-group-append">
                             <button class="btn btn--search" type="button" id="button-addon2"><img src="./src/img/icons/search.png" /></button>
                           </div>
                         </div>
                     </div>
-                  </nav>
-            </header>
+                  </div>
+                </nav>
+          </header>
             <!-- Breadcrumbs  -->
           </div>
           <div class="breadcrumbs">
@@ -113,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 position-relative">
+          <div class="col-md-6 position-relative pt-5 pt-md-0">
             <img src="./src/img/cafe/photo-2.png" class="img-fluid post--cafe--img" alt="">
             <div class="article--image--desc text-uppercase">
               armazenagem de café
@@ -133,7 +143,7 @@
               <p>(35) 3295.0141</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 my-3 my-md-0">
             <div class="alert--cafe">
               <span class="alert--cafe--top">Armazenagem de Café - Machado</span>
               <p>(35) 3295.0550</p>
@@ -154,7 +164,7 @@
           <div class="col-md-6">
             <img src="./src/img/cafe/photo-3.png" class="img-fluid post--cafe--img" alt="">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 pt-5 pt-md-0">
             <img src="./src/img/cafe/photo-4.png" class="img-fluid post--cafe--img" alt="">
           </div>
         </div>
@@ -171,10 +181,16 @@
         <p>A Coopama sempre preocupada em valorizar o trabalho de seus cooperados, apresenta a linha de cafés Coopama. Um café que representa a união das forças entre a agricultura familiar e a cooperativa, preparado para levar o sabor original do campo à mesa dos brasileiros.
           A Coopama comercializa o produto em diversos formatos. O Café em Cápsulas com aroma de chocolate amargo e sabor de caramelo e chocolate; o Café Torrado e Moído, com aroma de chocolate amargo e sabor caramelo e o Café Torrado em Grãos, com aroma de chocolate amargo e leve sabor de chocolate ao leite.
           </p>
-        <div class="d-flex justify-content-around mt-5">
-          <img src="./src/img/cafe/cafe1.png" alt="">
-          <img src="./src/img/cafe/cafe2.png" alt="">
-          <img src="./src/img/cafe/cafe3.png" alt="">
+        <div class="row mt-5">
+          <div class="col-4 col-md-4 d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="./src/img/cafe/cafe1.png" alt="">
+          </div>
+          <div class="col-4 col-md-4 d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="./src/img/cafe/cafe2.png" alt="">
+          </div>
+          <div class="col-4 col-md-4 d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="./src/img/cafe/cafe3.png" alt="">
+          </div>
         </div>
       </article>
 
@@ -185,12 +201,12 @@
     </div>
     </main>
       <!-- Footer -->
-      <footer class="content-fluid footer footer--article">
+      <footer class="content-fluid footer">
         <div class="container">
-            <div class="footer--machine--article"></div>
+            <div class="footer--machine"></div>
             <img src="src/img/logo2017.png" class="footer__logo py-4" alt="Coopama" />
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <ul class="footer--menu">
                         <li>Sobre a coompama</li>
                         <li>Conselhos</li>
@@ -199,7 +215,7 @@
                         <li>Premiações</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <ul class="footer--menu">
                         <li>Producto e serviços</li>
                         <li>Sejas um coomperado</li>
@@ -208,7 +224,7 @@
                         <li>Trabalhe conosco</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-3 pt-3 pt-md-0">
                     <div class="footer__social mb-3">
                         <a href="#" title="Coopama Facebook">
                             <img src="./src/img/social/fb.png" class="mr-1" alt="Facebook Coopama" />
@@ -224,9 +240,9 @@
                         </a>
                     </div>
                     <p class="m-0">coopama@coopama.com.br</p>
-                    <h5>(35) 3295-0160</h5>
+                    <h5 class="footer--phone">(35) 3295-0160</h5>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-3 pt-3 pt-md-0">
                     <p>ESTAMOS NAS LOJAS</p>
                     <img src="./src/img/stores/appstore.png" class="mb-1" alt="AppStore Coopama" />
                     <img src="./src/img/stores/playstore.png" alt="PlayStore Coopama" />

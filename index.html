@@ -12,40 +12,50 @@
     <div class="content-fluid top__content">
         <div class="container">
             <!-- top header -->
-            <div class="top__header d-flex align-items-center py-3">
-                <div class="top__header--coop">Cooperativa Agrária de Machado LTDA. (35) 3295.0160</div>
-                <div class="top__header--menu d-flex justify-content-end pr-4">
-                    <div class="text-uppercase top__header--item d-flex align-items-center">
-                        <img src="./src/img/icons/star.png" class="pr-2" />
-                        <a href="#" target="_blank" class="top__header--item--beneficios">benefícios do <br>
-                            <span>cooperado</span></a>
+            <nav class="navbar navbar-expand-lg top__header p-0 pt-md-2">
+                <span class="navbar-text col-md-4 px-2 p-md-0 top__header--text">
+                    Cooperativa Agrária de Machado LTDA. (35) 3295.0160
+                </span>
+                <button class="navbar-toggler toggle-top--header" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation">
+                  <img src="./src/img/icons/breadcrumbs.png" />
+                </button>
+                <div class="collapse navbar-collapse col-md-8 pt-2 p-md-0" id="top-menu">
+                    <div class="col-md-8 p-0 d-flex justify-content-between justify-content-md-start">
+                        <div class="text-uppercase top__header--item d-flex align-items-center">
+                            <img src="./src/img/icons/star.png" class="pr-2" />
+                            <a href="#" target="_blank" class="top__header--item--beneficios">benefícios do <br>
+                                <span>cooperado</span></a>
+                        </div>  
+                        <div class="mx-1 mx-md-4 text-uppercase top__header--item d-flex align-items-center">
+                            <img src="./src/img/icons/badge.png" class="pr-2" />
+                            <a href="#" target="_blank" class="top__header--item--link">Universidade <br>
+                                <span>coopana</span></a>
+                        </div>
+                        <div class="text-uppercase top__header--item d-flex align-items-center">
+                            <img src="./src/img/icons/rotary.png" class="pr-2" />
+                            <a href="#" target="_blank" class="top__header--item--link">área do<br>
+                                <span>colaborador</span></a>
+                        </div>
                     </div>
-                    <div class="mx-4 text-uppercase top__header--item d-flex align-items-center">
-                        <img src="./src/img/icons/badge.png" class="pr-2" />
-                        <a href="#" target="_blank" class="top__header--item--link">Universidade <br>
-                            <span>coopana</span></a>
-                    </div>
-                    <div class="text-uppercase top__header--item d-flex align-items-center">
-                        <img src="./src/img/icons/rotary.png" class="pr-2" />
-                        <a href="#" target="_blank" class="top__header--item--link">área do<br>
-                            <span>colaborador</span></a>
+                    <div class="col-md-4 pr-0 pt-2 pt-md-0 text-right d-flex justify-content-center justify-content-md-end">
+                        <div class="top__header--button">
+                            <button class="btn btn--coopama btn--blue">
+                                <img src="./src/img/icons/isologo.png" class="mr-2" />
+                                portal do cooperado</button>
+                        </div>
                     </div>
                 </div>
-                <div class="top__header--button">
-                    <button class="btn btn--coopama btn--blue">
-                        <img src="./src/img/icons/isologo.png" class="mr-2" />
-                        portal do cooperado</button>
-                </div>
-            </div>
+              </nav>
+
             <!-- navbar and header  -->
             <header>
                 <nav class="navbar navbar-expand-lg navbar-light header__nav">
-                    <div class="col-md-3 pl-0"><a class="navbar-brand" href="/"><img src="./src/img/logo2017.png" class="coopama__logo" alt="Coopama" /></a></div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="col-9 col-md-3 pl-0"><a class="navbar-brand" href="/"><img src="./src/img/logo2017.png" class="coopama__logo" alt="Coopama" /></a></div>
+                    <button class="navbar-toggler col-2 nav-menu" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                   
-                    <div class="col-md-7 collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <div class="col-md-9 collapse navbar-collapse pr-0" id="menu">
                       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
                           <a class="nav-link" href="/"><img src="./src/img/icons/home.png" alt="home" /></a>
@@ -66,14 +76,14 @@
                           <a class="nav-link nav--menu--link" href="/produto.html">Contato</a>
                         </li>
                       </ul>
-                    </div>
-                    <div class="col-md-2 search">
-                      <div class="input-group align-items-center">
-                          <input type="text" class="form-control" placeholder="Busca..." aria-label="Busca...">
-                          <div class="input-group-append">
-                            <button class="btn btn--search" type="button" id="button-addon2"><img src="./src/img/icons/search.png" /></button>
+                      <div class="search mt-3 mt-md-0">
+                          <div class="input-group align-items-center">
+                            <input type="text" class="form-control" placeholder="Busca..." aria-label="Busca...">
+                            <div class="input-group-append">
+                              <button class="btn btn--search" type="button" id="button-addon2"><img src="./src/img/icons/search.png" /></button>
+                            </div>
                           </div>
-                        </div>
+                      </div>
                     </div>
                   </nav>
             </header>
@@ -212,7 +222,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 pt-4 pt-md-0">
                     <div class="cafe__card cafe__card--milho">
                         <div class="cafe__card--header cafe__card--header--milho">
                             <div class="cafe__card--header--content">
@@ -296,7 +306,7 @@
                 </div>
             </div>
         </section>
-        <div class="sponsors my-5 py-3">
+        <div class="sponsors my-0 my-md-5 py-3">
             <h3 class="sponsors-title">PARCEIROS</h3>
             <img src="./src/img/logos-sponsors-article.png" alt="" class="img-fluid">
           </div>
@@ -307,7 +317,7 @@
             <div class="footer--machine"></div>
             <img src="src/img/logo2017.png" class="footer__logo py-4" alt="Coopama" />
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <ul class="footer--menu">
                         <li>Sobre a coompama</li>
                         <li>Conselhos</li>
@@ -316,7 +326,7 @@
                         <li>Premiações</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <ul class="footer--menu">
                         <li>Producto e serviços</li>
                         <li>Sejas um coomperado</li>
@@ -325,7 +335,7 @@
                         <li>Trabalhe conosco</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-3 pt-3 pt-md-0">
                     <div class="footer__social mb-3">
                         <a href="#" title="Coopama Facebook">
                             <img src="./src/img/social/fb.png" class="mr-1" alt="Facebook Coopama" />
@@ -343,7 +353,7 @@
                     <p class="m-0">coopama@coopama.com.br</p>
                     <h5 class="footer--phone">(35) 3295-0160</h5>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-3 pt-3 pt-md-0">
                     <p>ESTAMOS NAS LOJAS</p>
                     <img src="./src/img/stores/appstore.png" class="mb-1" alt="AppStore Coopama" />
                     <img src="./src/img/stores/playstore.png" alt="PlayStore Coopama" />

@@ -84,9 +84,7 @@ h1, h2, h3, h4, h5, h6{
 .top__header--button button{
     font-size: .75rem;
 }
-.top__header--button{
-    width: 20%;
-}
+
 .top__header--button img{
     max-width: 16px;
 }
@@ -458,4 +456,66 @@ h1, h2, h3, h4, h5, h6{
 .footer--copy, .footer-desing{
     font-weight: 400;
     text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 538px) {
+    .top__content{
+        background-size: auto;
+        background-position: top;
+    }
+    .big__bottom{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .big__bottom img{
+        height: 50px;
+    }
+    .big__bottom--items{
+        border-radius: 10px;
+        min-height: 80px;
+    }
+    .big__bottom--items:nth-child(3), .big__bottom--items:nth-child(4){
+        border-radius: 10px 10px 0 0;
+    }
+    .big__bottom--items::after{
+        bottom: -70%;
+    }
+    .big__bottom--title{
+        font-size: 1.3rem;
+    }
+
+    .noticas--title{
+        min-height: auto;
+    }
+    .top__header--coop{
+        font-size: .8rem;
+        text-align: center;
+        width: 100%;
+    }
+    .top__header--item{
+        font-size: .65rem;
+    }
+    .nav-menu{
+        background-color: var(--green);
+        color: white;
+    }
+    .nav-menu span{
+        color: white;
+    }
+    .top__header--text{
+        order: 1;
+    }
+    .toggle-top--header{
+        background-color: var(--greenLight);
+        order: 0;
+        width: 10px;
+        border-radius: 0 0 50% 50%;
+        display: flex;
+        height: 18px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .toggle-top--header img{
+        transform: rotate(90deg);
+    }
 }
