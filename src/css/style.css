@@ -2,6 +2,7 @@
 
 :root{
     --green: #709148;
+    --greenLight: #9fc54c;
     --darkGreen: #556541;
     --bgGreenDark: #435231;
     --blue: #008dd0;
@@ -172,18 +173,19 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 .big__bottom--items{
-    background: linear-gradient(var(--darkGreen), var(--green));
+    background: linear-gradient(180deg, var(--green) 0%, var(--greenLight) 50%);
     border-radius: 10px 10px 0 0;
     color: white;
     min-height: 182px;
     position: relative;
+    box-shadow: -1px 5px 5px -4px var(--bgImage) inset;
 }
 .big__bottom--items::after{
     content: "";
     position: absolute;
     bottom:-73%; 
     left: 0;
-    background:linear-gradient(220deg, var(--green) 50%, var(--darkGreen) 100%);
+    background:linear-gradient(220deg, var(--greenLight) 50%, var(--green) 100%);
     padding-bottom:50%; 
     width:57.7%;
     z-index:-1;
@@ -250,6 +252,7 @@ h1, h2, h3, h4, h5, h6{
 .cafe--title h2{
     background: url(../img/bg/logoBarra.png) no-repeat left center;
     font-size: 1.5rem;
+    color:white;
 }
 
 .cafe__card{
@@ -300,8 +303,15 @@ h1, h2, h3, h4, h5, h6{
     line-height: 1;
 }
 .cafe__card--header{
-    background: var(--blue);
+    background-image: url("../img/bg/coopama-simb.png"), url("../img/coticao/cafe.png");
+    background-position: -30px center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--blue);
     border-radius: 5px;
+}
+.cafe__card--header--milho{
+    background-image: url("../img/bg/coopama-simb.png"), url("../img/coticao/milho.png");
+    background-color: var(--blueLight);
 }
 .cafe__card--header--content{
     padding: 3rem;
@@ -348,6 +358,7 @@ h1, h2, h3, h4, h5, h6{
 .noticas--title{
     font-size: 1.05rem;
     font-style: oblique;
+    min-height: 3.7rem;
 }
 .noticas--title a{
     color: var(--green);
