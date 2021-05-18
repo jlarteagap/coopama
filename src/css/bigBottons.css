@@ -1,0 +1,43 @@
+
+
+/* Big bottoms  */
+.big__bottom{
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.big__bottom--items{
+    background: linear-gradient(180deg, var(--green) 0%, var(--greenLight) 50%);
+    border-radius: 10px 10px 0 0;
+    color: white;
+    min-height: 182px;
+    position: relative;
+    box-shadow: -1px 5px 5px -4px var(--bgImage) inset;
+}
+.big__bottom--items::after{
+    content: "";
+    position: absolute;
+    bottom:-73%; 
+    left: 0;
+    background:linear-gradient(220deg, var(--greenLight) 50%, var(--green) 100%);
+    padding-bottom:50%; 
+    width:57.7%;
+    z-index:-1;
+    transform-origin:0 0;
+    transform: rotate(-30deg) skewX(30deg);
+}
+.big__bottom--title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: .7;
+    text-shadow: 0 2px 3px #0100014f;
+    
+}
+.big__bottom--subtitle{
+    font-size: .85rem;
+    text-shadow: 0 2px 3px #0100014f;
+    text-transform: uppercase;
+}

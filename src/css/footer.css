@@ -1,0 +1,71 @@
+
+/* Footer  */
+.footer {
+    background: linear-gradient(var(--bgFooter), var(--bgLight));
+    font-weight: 600;
+}
+.footer::before{
+    background-color: var(--bgMain);
+    background-image: url(../img/bg/corns.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 67px;
+    width: 100%;
+}
+.footer--article::before{
+    background: var(--bgArticle);
+    background-image: url(../img/bg/corns.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 67px;
+    width: 100%;
+}
+.footer--machine{
+    height: 0;
+}
+.footer--machine::before{
+    background-image: url(../img/bg/machine.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 67px;
+    position: relative;
+    top: -67px;
+    width: 100%;
+}
+.footer--machine--article::before{
+    background-image: url(../img/bg/footer-machine-article.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 67px;
+    position: relative;
+    top: -67px;
+    width: 100%;
+}
+.footer__logo{
+    width: 180px;
+}
+.footer--menu{
+    padding: 0;
+}
+.footer--menu li{
+    list-style-image: url(../img/icons/bullet.gif);
+}
+.footer--phone{
+    color: var(--Text);
+}
+.footer__credit{
+    font-size: .66rem;
+}
+.footer--copy, .footer-desing{
+    font-weight: 400;
+    text-transform: uppercase;
+
+}

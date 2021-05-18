@@ -1,0 +1,16 @@
+
+/* SEARCH  */
+.search{
+    background: var(--bgSearch);
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.search input, .search input:focus{
+    background: transparent;
+    border: transparent;
+    box-shadow: 0 0 0 transparent;
+    font-size: .8rem;
+}
+.btn--search{
+    padding: .375rem .75rem;
+}

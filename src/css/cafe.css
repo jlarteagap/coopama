@@ -1,0 +1,102 @@
+/* CAFE. SECTION */
+
+.cafe{
+}
+.cafe--title{
+    background: var(--darkGreen);
+    border-bottom: 5px solid var(--bgGreenDark);
+    border-radius: 5px;
+    color: white;
+    line-height: 1;
+}
+.cafe--title h2{
+    background: url(../img/bg/logoBarra.png) no-repeat left center;
+    font-size: 1.5rem;
+    color:white;
+}
+
+.cafe__card{
+    border-radius: 5px;
+    color: white;
+    background: var(--bgGreenDark);
+}
+.cafe__card--milho{
+    border-radius: 5px 5px 0 0;
+    color: white;
+    background: var(--blueLight);
+}
+.cafe__card--milho--desc{
+    background: var(--darkBlue);
+    font-size: .7rem;
+    font-weight: 500;
+    padding: .25rem 0;
+}
+.card__milho--price{
+    background: linear-gradient(var(--darkBlue), #053c86);
+    color: #93de8d;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+    margin: .5rem 1rem .25rem;
+}
+.card__milho--price h2{
+    font-size: 3.5rem;
+    width: 100%;
+}
+.card__milho--price span{
+    padding: .5rem;
+    border-radius: 5px 0 0 5px;
+    font-size: .9rem;
+    background: #93de8d;
+    color: white;
+}
+.card__body--milho{
+    background: var(--blueLight);
+    border-radius: 0 0 5px 5px;
+    color: white;
+}
+.card__milho--car{
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1;
+}
+.cafe__card--header{
+    background-image: url("../img/bg/coopama-simb.png"), url("../img/coticao/cafe.png");
+    background-position: -30px center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+.cafe__card--header--milho{
+    background-image: url("../img/bg/coopama-simb.png"), url("../img/coticao/milho.png");
+    background-color: var(--blueLight);
+}
+.cafe__card--header--content{
+    padding: 3rem;
+}
+.cafe__card--title{
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: .65;
+    margin: 0;
+}
+.cafe__card--desc{
+    color: var(--darkBlue)
+}
+.cafe--data--content, .cafe--data--content--item{
+    font-size: .7rem;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.cafe--data--content--item{
+    font-weight: 400;
+    background: #d3d3d3
+}
+.cafe--data--title, .cafe--data--item{
+    padding: .25rem 0;
+    border: 0;
+    background: transparent;
+    width: 20%;
+}

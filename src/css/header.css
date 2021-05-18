@@ -1,0 +1,67 @@
+body{
+    background-color: red;
+}
+
+/* TOP CONTENT  */
+.top__content{
+    background: url(../img/bg/bg-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .top__header{
+     font-size: .85rem;
+ }
+ 
+ .top__header--menu, .top__header--coop{
+     width: 40%;
+ }
+ .top__header--item{
+     line-height: 1.25;
+ }
+ .top__header--item--link{
+     color: var(--blueTopHeader);
+ }
+ .top__header--item--beneficios{
+     color:var(--green);
+ }
+ .top__header--button button{
+     font-size: .75rem;
+ }
+ 
+ .top__header--button img{
+     max-width: 16px;
+ }
+ .top__header--item span{
+     font-weight: 600;
+ }
+ .top__header--item img{
+     max-width: 24px;
+ }
+ /* HEADER  */
+ .header__nav{
+     padding: .5rem 0;
+ }
+ .coopama__logo{
+     max-width: 220px;
+     height: auto;
+ }
+ .nav--menu{
+     font-size: .8rem;
+     font-weight: 600;
+     display: flex;
+     align-items: center;
+ }
+ .nav--menu--link{
+     padding: 0;
+ }
+ .nav--menu--link::before{
+     content: '';
+     background: url(../img/icons/navItem.png) no-repeat;
+     width: 3px;
+     height: 13px;
+     display: inline-block;
+     margin-right: 1rem;
+     position: relative;
+     top: 2px;
+ }
+ 
